@@ -1,0 +1,41 @@
+// noinspection JSUnusedGlobalSymbols
+
+const CODES = {
+	OK: 200,
+	CREATED: 201,
+	BAD_REQUEST: 400,
+	UNAUTHORIZED: 401,
+	NOT_FOUND: 404,
+	INTERNAL_SERVER_ERROR: 500,
+	CONFLICT: 409,
+	FORBIDDEN: 403,
+	UNPROCESSABLE_ENTITY: 422,
+	TOO_MANY_REQUESTS: 429,
+	SERVICE_UNAVAILABLE: 503,
+	GATEWAY_TIMEOUT: 504,
+	NOT_IMPLEMENTED: 501,
+	BAD_GATEWAY: 502,
+	REQUEST_TIMEOUT: 408,
+	PAYMENT_REQUIRED: 402,
+}
+
+export default CODES
+
+export const OK = 200
+export const CREATED = 201
+export const BAD_REQUEST = 400
+export const UNAUTHORIZED = 401
+export const NOT_FOUND = 404
+export const INTERNAL_SERVER_ERROR = 500
+export const CONFLICT = 409
+export const FORBIDDEN = 403
+export const UNPROCESSABLE_ENTITY = 422
+export const TOO_MANY_REQUESTS = 429
+export const SERVICE_UNAVAILABLE = 503
+export const GATEWAY_TIMEOUT = 504
+export const NOT_IMPLEMENTED = 501
+export const BAD_GATEWAY = 502
+export const REQUEST_TIMEOUT = 408
+export const PAYMENT_REQUIRED = 402
+
+export type IStatusCode = typeof CODES[keyof typeof CODES];

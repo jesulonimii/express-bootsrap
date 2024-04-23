@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "./src/interfaces", "./node_modules/@types"],
+    "types": [
+      "jest",
+      "express"
+    ],
+    "target": "es6",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "strict": false,
+    "outDir": "dist",
+    "baseUrl": "./",
+    "paths": {
+      "__tests__": ["./__tests__"],
+      "#src/*": ["./src/*"],
+      "#config": ["./src/config"],
+      "#types": ["./src/types"],
+      "#utils": ["./src/utils"],
+      "#utils/*": ["./src/utils/*"],
+      "#helpers/*": ["./src/helpers/*"]
+    }
+  },
+  "lib": ["es2015"]
+}
